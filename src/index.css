@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-btn {
+    color: white;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 0.875rem; /* text-sm */
+    padding: 10px 20px; /* px-5 py-2.5 */
+    text-align: center;
+    margin-right: 0.5rem; /* me-2 */
+    margin-bottom: 0.5rem; /* mb-2 */
+    outline: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }

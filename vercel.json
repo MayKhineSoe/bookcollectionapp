@@ -1,9 +1,10 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+    "version": 2,
     "functions": {
-      "api/index.js": {
+      "api/*.js": {
         "runtime": "nodejs18.x"
       }
-    }
+    },
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
   }
   

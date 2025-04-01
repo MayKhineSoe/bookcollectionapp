@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const server = express();
-const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+const router = jsonServer.router("db.json"); // Correct way to get router
+const middlewares = jsonServer.defaults();  // Correct way to get defaults
 
 // Serve React build folder
 server.use(express.static(path.join(__dirname, "dist")));
